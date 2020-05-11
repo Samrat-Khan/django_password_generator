@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            text-align: center;
+            height: 100vh;
+        }
+
+        .mid {
+            background-color: aquamarine;
+            height: 50%;
+            width: 50%;
+            position: relative;
+            margin: auto;
+            padding-top: 5%;
+        }
+    </style>
+</head>
+<body>
+
+
+<section class="container">
+    <div class="mid">
+        <h2>Your Password</h2>
+        <h3>{{ newspassword }}</h3>
+
+
+        <a href="{% url  'Home' %}">Home</a>
+
+    </div>
+
+
+</section>
+
+
+</body>
+</html>
