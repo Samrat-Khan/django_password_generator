@@ -3,42 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Result</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            text-align: center;
-            height: 100vh;
-        }
-
-        .mid {
-            background-color: aquamarine;
-            height: 50%;
-            width: 50%;
-            position: relative;
-            margin: auto;
-            padding-top: 5%;
-        }
-    </style>
+    {#    BootStrap Css Link#}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
 
 
-<section class="container">
-    <div class="mid">
+<div class="container-fluid text-center ">
+
         <h2>Your Password</h2>
-        <h3>{{ newspassword }}</h3>
+        <h3 class="alert alert-success" style="font-size: 2rem"> {{ newspassword }}</h3>
+    <br>
+
+        <a href="{% url  'Home' %}" class="btn btn-primary">Home</a>
 
 
-        <a href="{% url  'Home' %}">Home</a>
 
-    </div>
-
-
-</section>
+</div>
 
 
 </body>
